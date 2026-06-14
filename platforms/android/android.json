@@ -10,7 +10,7 @@
           "/manifest": [
             {
               "xml": "<queries><intent><action android:name=\"android.support.customtabs.action.CustomTabsService\" /></intent></queries>",
-              "count": 6
+              "count": 11
             }
           ]
         }
