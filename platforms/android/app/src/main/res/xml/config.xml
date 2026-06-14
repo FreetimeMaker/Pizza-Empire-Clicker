@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.gamename" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="CDVOrientation">
+        <param name="android-package" value="cordova.plugins.screenorientation.CDVOrientation" />
+    </feature>
+    <feature name="SafariViewController">
+        <param name="android-package" value="com.customtabplugin.ChromeCustomTabPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Pizza Empire Clicker</name>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <allow-intent href="market:*" />
+    <config-file parent="/manifest" target="AndroidManifest.xml">
+        <queries>
+            <intent>
+                <action android:name="android.support.customtabs.action.CustomTabsService" />
+            </intent>
+        </queries>
+    </config-file>
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="BackgroundColor" value="0xff000000" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="GradlePluginKotlinEnabled" value="true" />
+    <preference name="loadUrlTimeoutValue" value="60000" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#000000" />
+</widget>

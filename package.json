@@ -1,0 +1,31 @@
+{
+  "name": "pizza_32empire_32clicker",
+  "displayName": "Pizza Empire Clicker",
+  "version": "1.0.0",
+  "description": "Pizza Empire Clicker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "",
+  "devDependencies": {
+    "@gdevelop/cordova-plugin-safariviewcontroller": "^2.1.0",
+    "cordova-android": "^13.0.0",
+    "cordova-plugin-whitelist": "^1.3.5",
+    "es6-promise-plugin": "^4.2.2",
+    "gdevelop-cordova-plugin-screen-orientation": "3.0.4-patch.1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "gdevelop-cordova-plugin-screen-orientation": {},
+      "@gdevelop/cordova-plugin-safariviewcontroller": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

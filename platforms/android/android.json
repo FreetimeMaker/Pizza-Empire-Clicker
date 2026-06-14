@@ -1,0 +1,82 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest": [
+            {
+              "xml": "<queries><intent><action android:name=\"android.support.customtabs.action.CustomTabsService\" /></intent></queries>",
+              "count": 6
+            }
+          ]
+        }
+      },
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"CDVOrientation\"><param name=\"android-package\" value=\"cordova.plugins.screenorientation.CDVOrientation\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"SafariViewController\"><param name=\"android-package\" value=\"com.customtabplugin.ChromeCustomTabPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.example.gamename"
+    },
+    "gdevelop-cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "com.example.gamename"
+    },
+    "@gdevelop/cordova-plugin-safariviewcontroller": {
+      "PACKAGE_NAME": "com.example.gamename"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "es6-promise-plugin.Promise",
+      "file": "plugins/es6-promise-plugin/www/promise.js",
+      "pluginId": "es6-promise-plugin",
+      "runs": true
+    },
+    {
+      "id": "gdevelop-cordova-plugin-screen-orientation.screenorientation",
+      "file": "plugins/gdevelop-cordova-plugin-screen-orientation/www/screenorientation.js",
+      "pluginId": "gdevelop-cordova-plugin-screen-orientation",
+      "clobbers": [
+        "cordova.plugins.screenorientation",
+        "screen.orientation"
+      ]
+    },
+    {
+      "id": "@gdevelop/cordova-plugin-safariviewcontroller.SafariViewController",
+      "file": "plugins/@gdevelop/cordova-plugin-safariviewcontroller/www/SafariViewController.js",
+      "pluginId": "@gdevelop/cordova-plugin-safariviewcontroller",
+      "clobbers": [
+        "SafariViewController"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "es6-promise-plugin": "4.2.2",
+    "gdevelop-cordova-plugin-screen-orientation": "3.0.4-patch.1",
+    "@gdevelop/cordova-plugin-safariviewcontroller": "2.1.0"
+  }
+}
